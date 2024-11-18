@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Décompte de Noël</title>
+    <title>Le calendrier des Maussies - Édition Collector 2024</title>
     <style>
         body {
             display: flex;
@@ -14,18 +14,19 @@
             font-family: 'Comic Sans MS', cursive, sans-serif;
             color: #333;
             flex-direction: column;
+            text-align: center;
         }
 
         h1 {
             color: #e10600;
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 4rem; /* Plus grand pour le titre */
+            margin-bottom: 30px;
         }
 
         #countdown {
             display: flex;
             gap: 10px;
-            font-size: 2.5rem;
+            font-size: 6rem; /* Plus grand pour occuper plus de place */
             font-weight: bold;
         }
 
@@ -36,30 +37,40 @@
         }
 
         .time-label {
-            font-size: 1rem;
-            margin-top: 5px;
+            font-size: 1.5rem; /* Taille augmentée pour les labels */
+            margin-top: 10px;
         }
 
         #seconds {
             color: #e10600; /* Rouge pour les secondes */
         }
+
+        .separator {
+            font-size: 6rem;
+            line-height: 1.2;
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    <h1>Décompte avant Noël</h1>
+    <h2>Le Grand Comité présente</h2>
+    <h1>Le calendrier des Maussies - Édition Collector 2024</h1>
     <div id="countdown">
         <div class="time-box">
             <span id="days">00</span>
             <span class="time-label">Jours</span>
         </div>
+        <span class="separator">:</span>
         <div class="time-box">
             <span id="hours">00</span>
             <span class="time-label">Heures</span>
         </div>
+        <span class="separator">:</span>
         <div class="time-box">
             <span id="minutes">00</span>
             <span class="time-label">Minutes</span>
         </div>
+        <span class="separator">:</span>
         <div class="time-box">
             <span id="seconds">00</span>
             <span class="time-label">Secondes</span>
